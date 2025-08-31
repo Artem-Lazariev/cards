@@ -14,12 +14,10 @@ body{
 .card-container {
     perspective: 1000px; /* додає 3D ефект */
     width: 100vw;
-    padding-left: 30px;
-    padding-right: 30px;
     height: calc(500px + 30vw);
     border-radius: 200px;
-    padding-top: 30vw;
-    padding-bottom: 30vw;
+
+    padding: 30vw 0;
 }
 
 .card {
