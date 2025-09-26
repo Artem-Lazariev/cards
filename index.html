@@ -1,969 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
     <link rel="stylesheet" href="CSS.css">
 </head>
 <body>
-<div class="content">
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">FACE UP</p>
-                <p>He faced up with the difficulties when he found out that he is allergic to bees.</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗУСТРІТИСЯ ОБЛИЧЧЯМ ДО ОБЛИЧЧЯ</p>
-                <p>Він зіткнувся з труднощами, коли дізнався, що має алергію на бджіл.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">ACT UP</p>
-                <p>The kids were acting up, so their mother took them out of the restaurant.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПОГАНО СЕБЕ ПОВОДИТИ</p>
-                <p>Діти вередували, тож мама вивела їх із ресторану.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">LACE UP</p>
-                <p>I can't lace up, so I buy zipper shoes.</p>
-            </div>
-            <div class="back">
-                <p class="title">ШНУРУВАТИ</p>
-                <p>Я не можу зав'язати шнурки, тож купую взуття на блискавці.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
+<div class="card-container">
+    <div class="card">
+        <div class="front">
+            <img src="data:image/jpeg;base64,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" alt="Zeus">
         </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">BLOW UP</p>
-                <p>Her boss blows up every Monday.</p>
-            </div>
-            <div class="back">
-                <p class="title">РОЗСЕРДИТИСЯ</p>
-                <p>Її бос виходить із себе щопонеділка.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">BLOW UP</p>
-                <p>She is blowing up the problem again.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПЕРЕБІЛЬШУВАТИ</p>
-                <p>Вона знову перебільшує проблему.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">BREAK DOWN</p>
-                <p>She was furious because her car had broken down.</p>
-            </div>
-            <div class="back">
-                <p class="title">ЛАМАТИСЯ, ВИЙТИ З ЛАДУ</p>
-                <p>Вона була в люті, бо їхня машина знову зламалася.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">DEAL WITH</p>
-                <p>My sister is very good at dealing with stress.</p>
-            </div>
-            <div class="back">
-                <p class="title">СПРАВЛЯТИСЯ</p>
-                <p>Моя сестра дуже добре справляється зі стресом.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">BRING BACK</p>
-                <p>These stories brought me back to my childhood.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПОВЕРТАТИ</p>
-                <p>Ці історії повернули мене у дитинство.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">GIVE AWAY</p>
-                <p>Don't give me away to the boss. I am undercover because I am late. Shhh...</p>
-            </div>
-            <div class="back">
-                <p class="title">ВИДАВАТИ, ЗДАВАТИ</p>
-                <p>Не видавайте мене босові. Я під прикриттям, бо запізнилася.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">BRING UP</p>
-                <p>Do you bring up the topic of money on a first date?</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗАТРОНУТИ</p>
-                <p>Ви піднімаєте тему грошей на першому побаченні?</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">CALL OFF</p>
-                <p>She was furious because her groom called off the wedding.</p>
-            </div>
-            <div class="back">
-                <p class="title">СКАСУВАТИ</p>
-                <p>Вона була в люті, бо її наречений скасував весілля.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">RUN OUT OF</p>
-                <p>We ran out of milk.</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗАКІНЧИТИСЯ</p>
-                <p>У нас закінчилося молоко.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">TAKE OFF</p>
-                <p>Take your hands off me!</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗАБЕРИ, ПРИБРАТИ</p>
-                <p>Зніміть руки від мене!</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">LOOK FORWARD TO</p>
-                <p>He is looking forward to holidays.</p>
-            </div>
-            <div class="back">
-                <p class="title">ЧЕКАТИ З НЕТЕРПІННЯМ</p>
-                <p>Він з нетерпінням чекає на канікули.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">PULL UP</p>
-                <p>The cab pulled up at the gas station and the driver jumped out.</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗУПИНИТИСЯ</p>
-                <p>Таксі зупинилося на заправці і водій вистрибнув.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">MAKE UP</p>
-                <p>While the girls were putting on make up, they made up a crazy story again.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПОМИРИТИСЯ</p>
-                <p>Тому я вважаю, що вам двом краще помиритися!</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">PICK UP</p>
-                <p>Pick me up at 7:30.</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗАЇХАТИ, ЗАБРАТИ</p>
-                <p>Забери мене о 7:30.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">DRESS UP</p>
-                <p>Let's dress up tonight and go to a nice restaurant.</p>
-            </div>
-            <div class="back">
-                <p class="title">ГАРНО ОДЯГТИСЯ</p>
-                <p>Давай сьогодні гарно одягнемося ввечері і підемо у гарний ресторан.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">CALM DOWN</p>
-                <p>I am so angry right now, I need to calm down.</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗАСПОКОЇТИСЯ</p>
-                <p>Я така зла зараз, мені треба заспокоїтися.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">GET OVER</p>
-                <p>She was depressed for two weeks before she got over her breakup.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПЕРЕЖИТИ, СПРАВИТИСЯ</p>
-                <p>Вона була в депресії протягом двох тижнів, перш ніж пережила розставання.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">FIGURE OUT</p>
-                <p>It took me some time to figure out how to set up the tent.</p>
-            </div>
-            <div class="back">
-                <p class="title">РОЗІБРАТИСЯ (ЗʼЯСУВАТИ, НАМАГАТИСЯ ЗРОЗУМІТИ)</p>
-                <p>Мені знадобився деякий час, щоб зрозуміти, як встановити намет.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">GIVE UP</p>
-                <p>Never give up!</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗДАВАТИСЯ (ПРИПИНИТИ ЩОСЬ РОБИТИ)</p>
-                <p>Ніколи не здавайся!</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">HANG OUT</p>
-                <p>Do you want to hang out tonight?</p>
-            </div>
-            <div class="back">
-                <p class="title">ТУСИТИ, ПРОВОДИТИ ЧАС</p>
-                <p>Ви хочете потусуватись сьогодні ввечері?</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">BREAK DOWN</p>
-                <p>I am always broken down after watching Titanic.</p>
-            </div>
-            <div class="back">
-                <p class="title">РОЗПЛАКАТИСЯ (ВТРАТИТИ САМОВОЛОДІННЯ)</p>
-                <p>Я завжди плачу після перегляду «Титаніка».</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">BRING DOWN</p>
-                <p>My boss always brings me down.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПРИНИЖУВАТИ (СТАВИТИ НА МІСЦЕ)</p>
-                <p>Мій бос постійно принижує мене.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">FIND OUT</p>
-                <p>Tamara was very happy when she found out that the meeting was canceled.</p>
-            </div>
-            <div class="back">
-                <p class="title">ДІЗНАТИСЯ</p>
-                <p>Тамара була дуже щаслива, коли дізналася, що зустріч скасовано.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">GO OFF</p>
-                <p>This meat smells a bit funny. Do you think it's gone off?</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗІПСУВАТИСЯ</p>
-                <p>Це м'ясо пахне трохи дивно. Як думаєш, воно зіпсувалося?</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">SOBER UP</p>
-                <p>I need to sober up.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПРОТРЕЗВІТИ</p>
-                <p>Мені потрібно протрезвіти.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">FILL UP</p>
-                <p>She filled up the shopping cart with groceries.</p>
-            </div>
-            <div class="back">
-                <p class="title">НАПОВНЮВАТИ</p>
-                <p>Вона наповнила кошик покупками.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">READ OVER</p>
-                <p>I read over the homework, but I couldn't make any sense of it.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПЕРЕЧИТУВАТИ</p>
-                <p>Я прочитала домашнє завдання, але нічого не зрозуміла.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">PASS OUT</p>
-                <p>I didn't know you would pass out.</p>
-            </div>
-            <div class="back">
-                <p class="title">ВТРАТИТИ СВІДОМІСТЬ</p>
-                <p>Я не знав, що ви втратите свідомість.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">PUT ON</p>
-                <p>He looked so silly when he put that on.</p>
-            </div>
-            <div class="back">
-                <p class="title">ВДЯГНУТИ</p>
-                <p>Він виглядав так безглуздо, коли вдягнув це.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">THROW AWAY</p>
-                <p>I need to throw away all clothes to clear the space for new ones.</p>
-            </div>
-            <div class="back">
-                <p class="title">ВИКИДАТИ</p>
-                <p>Мені потрібно викинути весь одяг, щоб звільнити місце для нового.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">GO AHEAD</p>
-                <p>Honey, go ahead! Hug me.</p>
-            </div>
-            <div class="back">
-                <p class="title">ДАВАЙ ВПЕРЕД</p>
-                <p>Дорогий, давай! Обійми мене.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">TRY OUT</p>
-                <p>I tried out four cars before I could find one that pleased me.</p>
-            </div>
-            <div class="back">
-                <p class="title">СПРОБУВАТИ</p>
-                <p>Я випробував чотири машини, перш ніж зміг знайти ту, яка мені сподобалася.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">BRING ON</p>
-                <p>Do you think that you are a better dancer? Bring it on!</p>
-            </div>
-            <div class="back">
-                <p class="title">ДОКАЗАТИ, ДОВЕСТИ</p>
-                <p>Думаєш, що ти найкращий танцюрист? Доведи!</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">BLOW UP</p>
-                <p class="text">She is blowing up the problem again.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПЕРЕБІЛЬШУВАТИ</p>
-                <p class="text">Вона знову перебільшує проблему.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">CATCH UP</p>
-                <p class="text">He's missed so much school that he's going to find it hard to catch up.</p>
-            </div>
-            <div class="back">
-                <p class="title">ДОГНАТИ, НАЗДОГНАТИ</p>
-                <p class="text">Він стільки разів пропускав школу, що йому буде важко наздогнати.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">PUT UP WITH</p>
-                <p class="text">I can't put up with my neighbour's noise any longer. It's driving me mad.</p>
-            </div>
-            <div class="back">
-                <p class="title">ТЕРПІТИ</p>
-                <p class="text">Я більше не можу миритися зі шумом сусіда. Це зводить мене з розуму.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">COVER UP</p>
-                <p class="text">Cover up, it's cold outside.</p>
-            </div>
-            <div class="back">
-                <p class="title">ОДЯГАТИСЯ ТЕПЛІШЕ</p>
-                <p class="text">Одягайся тепліше, на вулиці холодно.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">MAKE FUN OF</p>
-                <p class="text">Hairdresser made fun of my hairstyle.</p>
-            </div>
-            <div class="back">
-                <p class="title">ВИСМІЮВАТИ</p>
-                <p class="text">(Жартувати над кимось)<br>Перукар пожартував з моєї зачіски.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">POINT OUT</p>
-                <p class="text">As we drove through London I pointed out the Big Ben.</p>
-            </div>
-            <div class="back">
-                <p class="title">ВКАЗАТИ</p>
-                <p class="text">Коли ми їхали через Лондон, я вказав на Біг-Бен.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">PUT OFF</p>
-                <p class="text">He always puts off all the tasks for the next day.</p>
-            </div>
-            <div class="back">
-                <p class="title">ВІДКЛАДАТИ</p>
-                <p class="text">Він завжди відкладає всі завдання на наступний день.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">WATCH OUT</p>
-                <p class="text">Hey businessman, watch out!</p>
-            </div>
-            <div class="back">
-                <p class="title">ОБЕРЕЖНО</p>
-                <p class="text">Гей, бізнесмене, обережно!</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">COME UP WITH</p>
-                <p class="text">My manager always asks me to come up with "big ideas".</p>
-            </div>
-            <div class="back">
-                <p class="title">ВИГАДУВАТИ</p>
-                <p class="text">Мій менеджер завжди просить мене вигадати «великі ідеї».</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">COUNT ON</p>
-                <p class="text">I count on this tea to help me lose weight.</p>
-            </div>
-            <div class="back">
-                <p class="title">РОЗРАХОВУВАТИ (НА ЩОСЬ)</p>
-                <p class="text">Я розраховую, що цей чай допоможе мені схуднути.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">FILL OUT</p>
-                <p class="text">I like traveling, but it drives me crazy to fill out all these forms.</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗАПОВНЮВАТИ</p>
-                <p class="text">Я люблю подорожувати, але мене зводить з розуму заповнювати всі ці форми.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">FALL DOWN</p>
-                <p class="text">My plan to build a rocket fell down.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПРОВАЛИТИСЯ</p>
-                <p class="text">Мій план створення ракети провалився.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">FREAK OUT</p>
-                <p class="text">She still freaks out every time she visits the dentist.</p>
-            </div>
-            <div class="back">
-                <p class="title">НЕРВУВАТИ, ПСИХУВАТИ</p>
-                <p class="text">Вона все ще хвилюється щоразу, коли відвідує стоматолога.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">BRING UP</p>
-                <p class="text">The only thing I want now is to bring up my son.</p>
-            </div>
-            <div class="back">
-                <p class="title">ВИХОВУВАТИ, РОСТИТИ</p>
-                <p class="text">Єдине, чого я хочу зараз – це виховати сина.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">CUT IN</p>
-                <p class="text">Your father cut in while I was dancing with your uncle.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПЕРЕБИВАТИ, ЗАВАЖАТИ</p>
-                <p class="text">Твій батько втрутився, коли я танцювала з твоїм дядьком.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">PASS AWAY</p>
-                <p class="text">Her aunt passed away last night after a long illness.</p>
-            </div>
-            <div class="back">
-                <p class="title">ВМИРАТИ, ПОМИРАТИ</p>
-                <p class="text">Її тітка померла минулої ночі після тривалої хвороби.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">GET ON WITH</p>
-                <p class="text">I get on with my colleagues.</p>
-            </div>
-            <div class="back">
-                <p class="title">ЛАДИТИ З КИМОСЬ</p>
-                <p class="text">Я ладнаю зі своїми колегами.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">GIVE IN</p>
-                <p class="text">I can't go out tonight, I have to give in my essay tomorrow.</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗДАВАТИ</p>
-                <p class="text">Я не можу вийти сьогодні ввечері, я маю здати своє есе завтра.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">DROP OUT</p>
-                <p class="text">I dropped out of the university, it was too difficult.</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗАЛИШАТИ, КИДАТИ НАВЧАННЯ</p>
-                <p class="text">Я покинув університет, це було надто важко.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">HANG ON</p>
-                <p class="text">Hang on while I grab my coat!</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗАЧЕКАТИ, ПОЧЕКАТИ</p>
-                <p class="text">Чекай, поки я візьму своє пальто!</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">GET OUT OF</p>
-                <p class="text">Kevin managed to get out of going to the meeting.</p>
-            </div>
-            <div class="back">
-                <p class="title">УНИКАТИ</p>
-                <p class="text">Кевіну вдалося уникнути зустрічі.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">LOOK AFTER</p>
-                <p class="text">I can look after your dog while you are on vacation!</p>
-            </div>
-            <div class="back">
-                <p class="title">ДОГЛЯДАТИ</p>
-                <p class="text">Я можу подбати про твого собаку, поки ти у відпустці!</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">LOOK FOR</p>
-                <p class="text">- I have been looking for my hat for two hours!<br>- It's on your head, John.</p>
-            </div>
-            <div class="back">
-                <p class="title">ШУКАТИ</p>
-                <p class="text">- Я шукав свій капелюх протягом двох годин!<br>- Він на твоїй голові, Джоне.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">COME ACROSS</p>
-                <p class="text">I came across a mistake in the book.</p>
-            </div>
-            <div class="back">
-                <p class="title">НАШТОВХНУТИСЬ</p>
-                <p class="text">Я натрапив на помилку в книзі.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">GET ON</p>
-                <p class="text">Get on the train!</p>
-            </div>
-            <div class="back">
-                <p class="title">СІДАТИ В ТРАНСПОРТ</p>
-                <p class="text">Сідай у поїзд!</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">GET OFF</p>
-                <p class="text">Time to get off the plane.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПОКИДАТИ (ВИХОДИТИ З АВТОБУСУ, ПОЇЗДУ)</p>
-                <p class="text">Час залишати борт літака.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">FALL OUT WITH</p>
-                <p class="text">I feel miserable because I fell out with my best friend at the weekend.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПОСВАРИТИСЯ</p>
-                <p class="text">Мені сумно, тому що я посварився з найкращим другом на вихідних.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">TAKE OFF</p>
-                <p class="text">Come in and take off your coat!</p>
-            </div>
-            <div class="back">
-                <p class="title">ЗНІМАТИ, ЗАБИРАТИ</p>
-                <p class="text">Заходь і знімай своє пальто!</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">GO THROUGH</p>
-                <p class="text">She is going through a hard time.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПРОЙТИ ЧЕРЕЗ, ПЕРЕЖИВАТИ</p>
-                <p class="text">Вона переживає важкі часи.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">ADD UP</p>
-                <p class="text">Now add up the number of calories you have eaten.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПІДРАХУВАТИ</p>
-                <p class="text">Тепер підрахуй кількість калорій, які ти з’їв.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">EAT OUT</p>
-                <p class="text">Let's make spaghetti tonight, I'm tired of eating out.</p>
-            </div>
-            <div class="back">
-                <p class="title">ЇСТИ В РЕСТОРАНІ</p>
-                <p class="text">Давай зробимо спагетті сьогодні ввечері, я втомився їсти в ресторанах.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">HURRY UP</p>
-                <p class="text">Hurry up or you will miss your flight.</p>
-            </div>
-            <div class="back">
-                <p class="title">ПОСПІШАТИ</p>
-                <p class="text">Поспішайте, або Ви пропустите свій рейс!</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <p class="title">TURN OFF</p>
-                <p class="text">Darling, please turn off the light.</p>
-            </div>
-            <div class="back">
-                <p class="title">ВИМКНУТИ</p>
-                <p class="text">Дорогий, будь ласка, вимкни світло.</p>
-                <p class="copyright">© english_by_sidorochka</p>
-            </div>
+        <div class="back">
+            <p class="title">ЗЕВС</p>
+            <p>Верховний бог у грецькій міфології, володар неба і грому.</p>
         </div>
     </div>
-    <!---->
-
 </div>
 
+<div class="card-container">
+    <div class="card">
+        <div class="front">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUXFx0aFxgXGB0YIBgaHRcYHhsdHRcYHiggGholHRYdIjEhJSktLi4uFyAzODMsNygtLisBCgoKDg0OGxAQGy0lICYtLTUvLy0tLS0tLS8tLS0tLy0tLy0tLS0tLS0tLS0vLS8tNS0tLS0tLS0tLS0tLS0tLf/AABEIALsBDQMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAFBgMEBwIBAAj/xABGEAACAQIEAwUEBwUGBgEFAAABAhEDIQAEEjEFQVEGEyJhcTKBkaEUQlKxwdHwI2KC0uEHM1NykvEWQ4OToqMkFWNzwsP/xAAaAQADAQEBAQAAAAAAAAAAAAACAwQBBQAG/8QAKxEAAgMAAgIBBAEEAgMAAAAAAQIAAxESIQQxQRMiUWHwFDJxgaGxM5Hx/9oADAMBAAIRAxEAPwBaojFqlipTMYny9YEwMdTZ880vrYYXOK1yXwxVz4cK+cHiOFWnqbUO5EhxKmK5xJSfCJRDnBs6KbBiNQB9k88ap2c4xlq4CrpR99G1/IxB92MapHDB2WrlcxSMkeMXBixN7j1xvuYrcTNxoU9sTOIvsMUaVUMbQD9/ux7xPMeGxwvO5foyUuKZnbTjP+0hOe4jQyu9Ojep6nxPPogVQerHBviHFSiu7bKCY9OXrgZ2EyxmpmKn945MnzY6m90wP4cecelikbdaaDlM0oATaLCNgOQxbWqJudr4WauZgyDgkuZFSCLdfLGkTQ8L5fOSxGKnGs8qK15MbC/ywPq7khp6gWxQzuVaBUgyOvObdceCjZ5rDxyK2czoddexYA/EYVK1UyYOLPfE0l8hpj0t90H34pVEI3wfLQJGwwnZLSzBA3x41ck4qhsSqSxAAnkALyfTHtmTsXOCtFYXFTK5ecEKi6VLMQFG5JgD3nBbgg5p6kLvivrvj2nmFqTokgbmwHzufWMcVACLEH0M/MYzkD6hFSPcrVK18V6tXEeZqRio9XGFpoEIVMqxWUhhvPMYgyuYJ8DXU29PP44qpmyplTfF9AjaaiMJnxox+7A7NlJqOmQfaB/3xd4Fmmp16TofEHUj/ULYK8U4PrHeUiDYSAZIMfdinmeHMuXy2YQXcsn/AFEqEL8RHwwYIgdn1Hv+1TgIYU81TELp0uB8VPzI9wxz/ZoD9FYfaqFh6BYPzXD7SoLXovSqCV2jyMEfAz8MLvCch3NU0ltoQx0Gpmb/APp8sIL/AG8Zaa8s5j0YRglIi5n4f7YtJRAAG0Y5p0oC/AD3RjzOZ1acarzMe6PzwqNzOzPz1xDMaVtjzg1fmcUON1IxVyWajFpfGkX09SNlXOzgPVe+PMvX8JJxX7zHmbYtVydsce0sR68S0RhcOXKN8NvZrJCRVaCFPs+fLC9wrLBmEn9euGigNK2tFhg1EWxjNl+KmbHywSzmbbRGFbhtFiQBck8hPywYpZhKrFEqKzA6WUGSDzmMY7InbHI6oWOCFBMW+NsXZKX2jrf/ACrsPe0fA4PcPimgHOPn/vjt+Ad01SvWcAWAkxCrsoF9RJk7i9oOIqRVwrKYDglA1iVBAmOkkX2PKRieq5Hc9/4j7KLK616/zInrSTqJ8owV4PUGh7wQJBE8+owMr5cg3xY4UwR/ELMIk8uhPUYqPqSqcMgzHEKiMTMm8HfHtDtA7H9oSbQByxb45wTSNSnfeev3fDC1VpFSCRzg++NPzt/F6YwsANhcW3JUzWUCkACzqT/EjFTfaSmgx64qGlNj8cXOMVSVlRemUZd7yACsEbkb+vpiZqlOmjVH9nQSOd5EQBzHLoxU8sRi8Ih/IP8A8lLUF7B+D7i0qhl1LMSwv+6xU7emJsrRk47zISn9GUEFWlZEQWaCCItEq3l4/LEzZgUqhUiZVWXzGqGHr4Wgea36OFigaYg0sTij9j/EunMLT8MSREzIkkSAIvtcmbe+wfifGtbeEC2xAnT/AJBBHqdzFzzxPnqgqvUdX0gsYDqQQpYT7MgwCBIJ2AsbCjlcutQsgtcy24pIEBkx7RYmLdSYxK9nI6Z0K6ggwSgMx3jQzMPN2Kj5K0fdgtQ4K1mWoFPJg2tT5NA292B5o0pNqhA/cQH46vCTvEGJ5wTixwgNqY0gVgWSTLGCYIaAPMiwt1xquo9wbK3YfaZHmG1UyzeF1Okr5846enn5YCvVODHEYBYbtOprbTt5ctvXAbMMTcxa1gB8hb/e+KN0SHjhIzJ9rxLSBO2/T8sVZxay5gg9MEJhEOdm8/VDhQSw307zA+Qj3bY2HKdm1p0KaMJ7ur3w6AuDIHkGjGL5HNmnUFRYkTbrIuLY/RORbvKdNj9ekB8Rv9x9+MsOQ/GUMTPuFmD6iPxxDmaINUsAJnSfOFU/diCnX0PTXm1QL8iT92CWYA1ADeSx99vw+WFS0djJQ1Et5KI95wm9ouMM1YpTVmCWOkTB/Q+WGnP1yiOw3M6fMx+hjNzTr1iwy7FVQwzzHeOfaPoIAGPKJNcfiZzx2lacBaT4Pdoz4AMLi4dd002ntIVSraMehsUqb4n14zlAKSzialUxU1Y9D43YBWMnDa5Ug4YMrmtXPCRRzZAwX4XmpIwxWiGWaC2Z7sGlUQ09SqWqklYUkWHUHYxtJEiCMXshwZX3y+VrXMP7JIJJEwrSRO8497GvUei9Rm72oalTw1D4SoqMFXYhBAFwDcyZxQbtdw6s5T6JWp1wSoCppOtQSV7ymTGxv0GOBa7vYxPxPpaa1SsKs97XZYUaZVMrTpO6MveCG5QAG9oEMym45eWLVOirZnKVB7NTJBlI56RS8PkNL6o8jhR45xGo00p1VQyAybkBLlmN4GqL9epxY7I5zMNWoZOsysmXTvadRVhgoYKKZnYXKzzWR5hnjqSwI/M9fgQg/iPeYyhbFTh+U1VVpsDpJ+Hv6Wwa+lqqmYgXxSyOeDMWVfD12vjs6Zwyg0Q1xNBp2t92ETtBwuqab1KNyFIdSJ1JfxC4hlJnzBNjAw11M2WkEHFbM5qlT1B1IfunbR+4AZYgbCfCJuSwtzAOQFOxgHJwRM1y3FqS0v2gV2KGWZ2VpUkRYe0dM+KJJEnpJmGeuppKju6g6wBEKxEMSRAgQ2xMtcbx3m9K5lqQdQVaPGquoqASxhtjIOx5c4wU47x/KZZcqlJh31Mk6gZEPqWoahT2tRJOn7UC145j5yAAnTVftibWy7I1Fql01oFg+z7jufAFm095sCCMV+K5jVVNekSVUK7CCIJcqVKkAwSsmR9Y4du1nBaNTKiqo1ByGN5jUNwel/uPPCkuVU0npIpaq4piAdTMQWJkiQI8zsJnlhm4MiyveymmfNRS7jbSHa4kkHTEHc6b+YXDzwTsu1Qa6vhQ3SjBXSDcF1F5v7JIMb3sKnBOzT0XSAZR9agAkamGnU9QrACCTpG5G4nDHx6tUMqphfKPmdU41R3PfEr5jsvlX8KrS1RssA+7/fCZxPhdShV7oMV1hitToJBcHURM+Hz23wUzfBVMMGNOpyZSQGPQwYOBnaDNtUpUkrMRUAZZgksZAEQbyVj0B641hPCVDRUUm0wY3ZiNVRj7RAm8DeJgwJ3wvVRfBfP0WRVTfSg2I9TsTeSSRvJOBaKWPMn44qUYAJzXYFiRIlXFqkuO6CXBIkTttI6SLifLF/IZbW6rFmYC14kxafXDAIpmnGQol6lOmASXYKAOZJx+jeEUilKnTJkoqj4D7rYzjsX2ZNKvNVPFSOsNGzEFdPqPESPTGnZUc8A7bKPHTO5HUyqmqGj2DIPRj/T78cVDLuedgPw+ZOLGZbb1B+78sDcvU9pjtI+PL4fecLlDECD+0+Uaoq0qZgsILfZQbn1OFzhuSpUkioLkmF+yOXvIufXDZn8xYkbi8+kwPfjMM/nRUclqhJ1G1zHw9PljdkN7hTszfjeZ1QMCBizWWTiLThj9nZTWABk+U4mRsQ6cdDATSJYBxIuK6nEmrBbFESVTg9wIqG1POhQWaN9KqWIHmQsDzOFwNgzwWquoK3smzehsfkTggeuotlGjfUYOyvbc0stmA0d7qJpKNi1Qm1vqgn4DFziNJ8qmWNOn3mYIarVJaLtZdXUkFvjgB2Z7Oa8+qGNKE6/IqTqnpb4hgcNnaLMs7Fkp+NmiSQAEBhbkgCBeN98cooC5/wCZ2lswDfiJ1HO5s5uq3ctWd9OpaSEw+mwtsANyfI4eezOQagDUrR39T29JkIonTTBFjEkkjcmLgAlHpLmF4jkxTKgisgXSSwJd11tUNidQsZjwrAAAGHriebBZtFhJK+Qm3yx0KUX2JF5dzEcfiF2qJfUZPL/bFMcTNIQpgkkKdwDBI32FsDMpUJMseUYn4nlyaekCWZlgC5sxI221FNM+ZF5w9iAJCgLMAIVznHK9RVp5emDUqASxkBQxiRcRFySdoIixxMtGjk8uX1d7UdgxY2711kovlTDKW6AJz3wC4fks5SoMWpMguKRqLpgtp1sRuByC8+kXxR7SZSoxSkpZlVIm8kwtyP3lBg89PriHkWPc6SqFHUGU+GirljWqBzUR6hkAySKmsMwA1FZqER5R0w58Cy2UanV+j5bU1NZRo094VYlSEe9QrKgvpPtQOeFSgjVMrWoIx7xWUhT4SQCzEX2km52EAnBejRZ8tScKaboQ9MJppnVqIYvMHVoJkDqQYiSi1OXvZTW5A+IJ4Z2oOVpqHpmorM5ce0AxdmBX/wC2dRtup9cHch2wpQSuSenzZtKhbkCSbbkjE1PIO2muFAq31ALrWpPNlEFX6sN5MiTOKvE3oBTqUiqxEU1d6Ss0cxIAHhBJETYTOC3iIHsy9WzWbraSoKo2x06RB5zJkehGBVPhWa7wMyFo0zJA2cuom+obgkfaIHm4ZbiLGmGIDNs2kbnnAJ2J2vzGI/p6Vp0SpUkMLj5HnBFo+7BaDMyI/Ec+VaXHh1XRgZUeTbn34WOLcU0Vk16nQAwFYLIJBNyDN1Bi02uMHO09QawWENs4G1jaPcJGBPBMlTzGapJUEqVkeqEsR/lKAj3DB6PZg8d6l+rldSFkI8Qh0YaXS8wyG/KdQlbb4Fpkmm2HztHw9XWVs49ki1/d+tsLdDjGmmmmihq3DmqgqCRzXxgKOoZWIPM4Onyg4+73Jr/BKkfT9GQcM4O1WotMWLmJ6dT7gJxpmV7Ioua+kavCIKpGzAAC/QRMYXuzHF6dSoFq0aS1V8StTBpzHXTKkSQD4QRM3w+dnuM0s0jFJDoxWojWKMDBBHX0keZEEuFyv0IgeMyf3wkVBIbyAI8+R94+7BBdumK2XpbnlOI8/mgBG8fPoPfjxEbyzszjOVtzNvwj9HAniFcrTEA35fniavU0glvFUIEKNh5frlgRxviHdLDHxPb+voMBFM8D9o+Kt3a0kks58RHkLj1OMyz1V9bCdMGINsPWXdKSl6wZtLsUI2kAEk/L4HGc5lnr1HfeWJv5nBA9ybOR2UqlLELU8GMzQhiMVXoYpdIxbINKY9CYuGhjzuowkrG/UlULjoDErJj4LjMntkUYt5F4IEDeZ5/HpiHTgjwzKOxEAwzADoW5evPHtzuZm9R84EmjKV8yzCmWQU1qBZKoogvH1miFHovTCbxbOZqWX6ajqCQCqAEwoM2WdzHrhw7Q8S+j1svlKVTSKdLx6NJIY6T4g6kR0577YWu0WYqeBjXVlYFjqpqJ0xaF3BmN8c9dLaR77nSAwYPiCuy9d6L9+FdjrYa7HUChDCGGpnOq0H2mX3t2erMp0kW5GIkdfl8jhZ7M5in9IQCAqyzkndtalIPI+AGViQb9MOObqd7WpAqTRqVVUlYBUu4TUtjYEibRA6jD1v8Aptjeoi6j6g0e53wbLNWdKakjVMuraWQRMjrtsd8PFbJUVVUKgKfFe3vncMYkkeQEAYCcM4NmEdglSkiAlU0hqjMVYqzVIKEGQRpV4F7NM4L5nh/EhBXMZesAP7tqJpT5CotRtJ8ypxN5Vys32mP8Wo1r9wlynwak0Ra8iXZ+UEadUQeYMjqLWmfs/RVd2WPrFtvK9gPKMZtmMxWWrOuoPtIFPeo1Jgz0yEB0g6gS41CGUgFTi3V7XZipSdbVEIppPPvBpdxKiYgqPEsSW8QiChUs+DHEgy9xrIZihULd1QzJW6SO6dkht3gjUukCB9oGwNg/CO2+UzE0quXbLknSZYldWwlgAVNt7Xi+2Dycbp5rLoCYKE93caioDKG6oxSY5xcYz7NU2D1Hpg94GBZVEqQQCV3kifGJFiTIO+G12neLTzJ1omnUeJU0sIQkwCFkFrWI3B253kYn/wDryBmpu5VgQt1gEkWgEnf1+8SgcEzqVaXdBrE+Bn3TSTAa8Gxjlt54sNCVFp1DpRSCjtBEBgxVpgghlF5uGP2TLSTFiNJUJqNMAFjqMCAzbGR1gR7sAu/anmg4Ld0wFiPZ5FZHqYmbGxgYKZbMozgq1tmE728J89rG8gb2ssZrNu9VqVJHcg6jpGqCzhUsOpa3qMeOezPe5Dn8iuZNSoXhQQotBaCRMA7gNgbw1Bl69Ig3DEm+yrTckf6ZxPxPJ5pUgZaogG5qGP8AxY3/AFGFqnXqGsiFpd20kQAPENK36y3kBpEYXVrn3/qPdQq+v9x5qdow6i0t0B9PzwP4g6OddNtLndG2PnHXzGJ6H9nueqKJNFWMaV1mYPnA0+n3Yo1cjUyz91XSG5GdQYbSrCzQbHoRGDNJTvIC3LYMBBljIV9Nak+m4dRa/teEj4MRi7xzMNRr1Ho1HpsWRpRomUgyIIYEsSQZG3lgMM4BURVN5n06EztBv7sVuI8S7+q7LOibH91FgGYtMA+WrBVqd0RNzD1GLsz2lzT5wd5mHKkgEM0ofLTHhBFrQZIsJsbzXa3M0q70V0OFaVZwZam0FSYYeMLKHYTfnAQ6HEP2ikbhgZmLKwZSF+rJBGnzxdzvEC+YqMgDMqaQAd30hY/1SPdg2LA9RaBWwGMVbt1U1P8Asg3dw1TQrEUwdizltrbxbEPH+INmIqyApQRB2MXX1BH48xipwrhtNahenqDaCjQZFUHcuIufSOQ2GBlTKfRzUTVqRiCqx7Bi4B5jYe7FCoVPZ2c2/wAipwQow/H7/nuFuME1crTRD4gsmD7RO4P65YDcNRUS6zJ5+X6+WJ+EZmNVMmCW8I62vjjjCxUgbQP64aqdyV2IGTniOXhzim1DDDxjL8xgXoxeyxSucg5qGK9Slgs1HET0MJZY5bIHNLHJo4KNQxwaWElI4WQd3OG/+z7Ig1WrN7FBS/vi2F7usP8Alsr9G4cAbNWOpusfVHy/U4mv7xB8/wDUppOa5+P+4pdoadVsyuYZg1IuyhtC+HSdRV2A8TaGDCeXXScDOM5iHZUABElbW0KYup9mI57j1w08Q4bXek3dnwPQGssSFlWe9zBIR1v1VdrnCXxPKAXL022JqBtdtCqYYuS19RjYGIPLCxXjGWK+qDK1HMkeMEE7vHTwibnlZYA54fezmep+CSIBDud4A8YnodQD+QUfaGM7rUdKgzIYhgZYRKm197DfBngGUrZwjKZZSAY7x9gFncx7KeW5jAXICIat3NC7I8SrhK2fbUcvWzNQ6OdNCwh1HvIYeXUY06jVBAIMg3EYCVsvRyuTWgI0Imm/1rXJ8yZPvxnOV7W5ijRVAU0gQs7hR7JmbiMc3ibCSJb0FGw1/aUFGYpVKTharqVbxaY0q+l9X1W0s6aujc4GEjLZ9ZYqtlWFUOzFNN5CnkpUkXkQNxM1OMcXaq4ZrneT12/HAsVZAm0bWuZ1RHkD8PPbHRqqPEAyK1/u6hM8V7sBQVGmCoVSl5mJX2iutjL2MdYw6dleJKqJSWGr1X1MqmQJAAk8gqqJPkcZx9GBB1b+XKOWL/As01N7Cpr5NTEkjzWxPqD7sDdUGHUbU+DDNn4l2TyWYfvKtHx/WZGanq/zaCJ9cV6nZPhyC9AH/M9RvvfCnT49mYGk1H8grE/AKYxDW4hxDMRTpUKokxrdWUCbbsAB78c8rYOt/wCZWAh7nufq0KObSnlvDNii3j05b/q+GDshwynTSjqIerXqlq7baRS/u1AaCAC6mQJluUyOsl2EpUKbPmK0DQdZQhWcyYl22kEjSOsSZwscZarnSUy79zTpoNNNtTO3jZxqqMZMkhtXmB1w3eS5v+4g5z9R57c5ikKbFmUGOZxi3BqqvxLKkQ3/AMmkAP8AqLf8fdhhz/B6VakG0MSVmWZi085JO+AnDGTK16OYUANRqKX6aQRcrytInVc8hbDvEQKfc9exC5P0LWI71QBESflbGf8A9pXD6bLC1gpktoP1SYLMCD4Q0XUgybiLy3JUesutJXWB4vsjfn6DAf8A4byzHW6tVMyTVcsD5lfZ+WOw6chk+dru4nZkVXhndpKsHDcxOlgNQbxEXHhjcc9xiLuJ0KpBbkNJEAAXYmwWCLjeL+evcX4O2ZIHd0qVKmIVggZwLzptC7mN4mYnYFWoZOj4Q6sE21MHYsSCxbTMmQIB2CiwO6hWY1/MQDrs/qJr8DbQtTvgp+oAhmJsSZEWmDEmxxV4Hm1yz/t6T2I8Y2IHKeQvII94PJn4jm6LtOpj6Kb/ABjFzgnEsmqsKuu4iCkgjmLE72+eDapSuSevz7FOkb+vxPcpn6LBVy76miQCINwYBi0m8YXlDVaoDc2v+WH/AIVkMqXqDLKiOSAQU7spa50MAdhHv5TgZkOAk5tyFK01JieZJuf15YEb8xOLyLKMH7ivlcqVr6zyqEL72v8AlgpxeiA9+YwTzOQBriOTWHvxb4vwxSy2Y+EGy6tyd72w4eoohrJTWKiYGV8pBxFwnPFCJ2/VsNLZZWUOt1PyPMHzxbFnVi/9EgYqvRvhgzVDTilUpXBI5WsCD0PQ4XYwUaYdQZjgghcrPQTzP9P1fEH0YkwBgnmc+EOk93POVUfgOmPadWk63hWk3AJVhboTpIvsLzyjHPHl1k4QROkfDsUaO5U4Nw3vq9Ol9pr/AOUXOHntMqOAkwZ8PkBYWwt9mcpUNRmWW07shgxf6hENttE4M8TQs3iUqWUbiDtF/PC6CLbS/wCPUbePpUhfz7g6sS9WqhVhSoqlKSmrU3eKWKQs+EL7RMamNwBjP+KVvpdSvXstNCFRQPaLMQvwAJ9w6nD72uzhy2SAUkEHQp1SZNKrfVcsZOqeowt9neF92ypVQFUQNVnka4Gn+JU8NtpnBMhBwfz5j67QU5H+fEC8P4ZSepFRix+zAEAmTtYSZiDYeuGLh+ZfJE9zGg3tY+h6+uJ8/wBnGpspozVQkbWdOhifH/DJ8sDuK5erQbRVUgn2T9oeX5YnsVvTSyt0I1DOuMdo61YaWYgGx9PdgFVzA5AYkqKxaApLXEASZ2NheRglkuB1mLGqAiOZZQQJvPsrt6W/I66h8CBbdnbGVcjwmrWAZVJBbcnSoUGCS5sLk9T4djixxTgRpU+8pvrKk67eyORU8wNiSAdjABIDM5OlVHsqNKjko8hy/G+PabGZO/6H3YqFYAnPbyNbRM8D3BIHXbf1G3ywx9nKQRGaFDGDJtYbARcXM4PN2fy1X2h3Z/d9kzEyoFtht8sccV4EU1Vw51eXiUWEE6VsLH2wLnnF57VPqWVWq3YMuZfMrqJZoJuPFvO95P1pFzeJ54tPxFFtLPO9NWNxzmDt6mMLB4k+gl0UgmQwqgTCmCRpYldK2NhbEI4l3aagywxMEAACI3mDEGf9jiGyjuW12dQt2mz1KtppDLsGZlAap4oJawClisQrSI2Bwy8F4aFQDcwJbrA/UDljLxxCoM1RrVQxpq1mYfaEbCyi8c9tzy1LJcUFSmBR8TtYDp1J6AdcItBVQI1PuOwO1dKderSqQqe0hPOYBiOUyTPXClxzIFqpSl4lJEqGjVLgBQR9ZjAE2vPLGj5Lsz3WYpV3c1SJDBgIBIMEeQJiPOcUe33CwwV1pqTDKSTGiYOoD6zDTA6ap5Y2u1Q4yY6EoROuyna+nWBymsgrIQtGpkGymPrACJvMC98GeL8Tp5VA1RSzNPdURu+kXZvsoOv34y7MIEqMRUNJ4BpqZ1U6inUoAXdWMbX8QxLxvi75mqK1QAyqwvIAC68rTJnnM88dmm3kuCcHyvHC2afUs8Z7SZjMnxPpQ7U0lVA91z6knFOjlbC4vccv18Bge2a6AfrkMdDMTzg/H4Xw0CQWAmGBRUW3G5sLX5X+/Ef0UMYU26TtPnzwNp1nW4INjuJE35Rf39cdpXaDOk2n+nrjZOam9gxq4LxCp3mgn9mEJKi4sB4uurUCxmRJ9ILZXi9UUmqtFxGkDYCw8VyTEEmeeFnhWZCIyMjmpUUqIvHhDARvLc+gA62ZaNRPo0vC+GL9TNoA+7GZCLOBhljsoKeaqEqYZd1O9+Y6jzwU4hRFNtKtFyT5knCpwumaINQHTvB5iDbbnPLFzLcXFcEv7anSwnbpt5b+YODA5GELAqeotUkESRI3jzi3ukYP9l89oOipdGF/LofdiDIcJFQBqLi/1W2byv7J5QfiMfZrJMGAMryPLTA5ztyxZ0RkWSQdEvdrnFMikpksNU9FOw9T93rhcoZggkBZ/Ppi5lco9Zpuzk/gNI+UYdMpwJKAmqZqN/zPqg818vXHExr7Cx9TuKForwCJOY4AakGo6gnkFMiwidrYAZzLVaDaCY5gi4I6jGgcZrUlrDVU0GN2lgbmBKj8PhgDxhqdV6dNGVyZuAbSP3gNzG3TDLa6eOA9iBTbeX7H2mT9kcz3YAY+14ifPl+Aw8ZHN0q5hwCwt4hv+vjgbwvsqiANUdtUeyIAHkZmcWavDwniW458iMT/ANPYo5DqU/XrY8T3BXbzso+YSklFQUFdGqKTcUwGDaZ9r2tt8fZugoLSl3gN5wIHwGG7IhygBNzEHcge+0/q+Kmd4PqMhhP739PyxV41jNvKSeXUABw/9RHh0kRrQRpiJUdIMSAOe+LNbP061MUq1PvBbSrKwIkcmsQflgrmOE1ByXf7QxSG+gqNanrGqTsTPz8/TFDKCMkiWMp30YKy+RVSBSo92Psg6mY9WfeB0mMXTwyoVJtPJRufwGL1esyozUx7J8aWBQXk+LzBwKbiVXSaiyyjxEQPZM393PADoYI4tzOtImoMu6kR1H448p0wef66YlTtSXIARdMbNz8hyxfXO0qyjQQrD6ux9xFjjd/MErK2XyxO2DOQUpsfIg8x544yFIESzARva49dsE+6B9mGHWcCW+DCRSO4tdpeya1ArUwQJug0gwQZ0k2kk8yPjfCLxfgPcuyujimZSm1gbCZJm92Ii02HljZKasBtbyv8sLfbzIo+UqVJcNRGqAYkAEwQwNuY9Ok4S69aJdVcScMWeEqj0kVlCjTAUrZxA8USY8/PDj2NyFKnTZkHiYmfQEwJ6Rf34zzspWc/s9a3IJDnUmrkRUvoJkAiZvESRhu4bnHyzeKCjXIDBwAfrKy2YfqBjleQmep1Kn0Rr408UXINwp+MWwvZjjSZiiSoYlRDwpMNF9vPBeknfkGp4afIH63QkfZwM4TlxQq1KKiEfxpN4P1lnmLyPfiZRHbM2zuZ3RlnS0orLI1bT9xg2MXxBwYB2qUHBUhlKgCSLhWUAm5IIgSLqoth77TZFYZmiI2jebRP1TBJBvBA9QhZ2kEra0DIAzBSSbhWGlgTcjz6jHW8R+pyfMAPU6XKswLAWk7QYiNwLx4heIuBhg4F2SesZeaaC5MSQPwPli52fWmgOZJMvMKvIz4h0iYInkRgzW41qpFSQq8x+AGOiTPn7HO4JTzfCcqngpo1QxBOtjJ6eEgY7yXZSiykupQnaGJjzvMnEfBaRYlpIT5senphgouznSvLqbDGqPzEgnYMy3ZY0Sa5qCoqqYbTpK9ZHMxz9cUa1E16i7imlwI3NsO/DKkqaZg72HIfqcAu1Oeo5Ske4CNVcgJtpWT4tM2LBdRk2WJ5YFiFlaV8xBXEVKoHqMtKgonvGOnUwFgguXM3sDJAwi0uP06LP3ffVNRuS1OkLTEKyVCd9yR6DAfjHE62YqCo7s7EyJbXbkADYDooxcbhDELIUmLxBP8AEb+K2J2dj6lISuod97+ZsuXyqm8e9bfEc8S8ZKjL1GcBmVCEbYybAE8xJxFky0wykGLMNj6jkcWa2T79qVLkX1VP8iCT8SVHvxbfoU5I/EwsAZZ7HcENOgKp9t7/AMP9fwGD5pggqRY45+keIrMRsPLp7sc5jMhEaodkUsfcJ/DEqrwXJ1tDHZiXa+sTXcSCA7C3RTpHugffirwAMHDKLzb3fr5Y5z3jqEE3gX8z4j9+DXBeGMHUaYjebcsQjT3KelGTQsjxB6qHwSwEki8gbmOv6jHDZrVTMET08ufywZ7KcNKLrNgwt1Pn6Yq9ouBMZqUIFX7MwrjnI2DeeL6m1MMjtqIYOJU4VnWhlPKI8pnn7sW+N5x0VWUbm5+7ArIKRJI9r8Bf5zj7j2fQjunbR4AwbnMxA+F/XEfjE/Wj/L/8Mg7/AFjXGqk5C1ALFCTv5EEyDhd41mauXraanjKmVaI1JbSZG+xkdRvg5wov3lPuaiEOGWGAAqKoEtpFiPETBIO/ScEc/lqWepCm6NTcFgjgFgrjcSN0MbeXXHS5Ye/U5yro/cXuymaBrxB0OvPcTFj1BbY4M5vggomV1CmxkBROlrkgDmDe0QZjCbQFTKVtFVfZb4eanmCPcRjSTnNS06qEPQbw1gN06VFYXBB3/pOAsQg/qHXhBBmXV+C1aVd0pEVAF1r0emflPIgxcYqVahV7I1M76W5HnE8sapxTg4iaZ0VNRZGHh1HmCRYFt/OPeA54jl6ymlm6SB0kHU2gjqVaADtyv5Y8G/U8R3hi9lOME7GGFpHOOs8sWMxmmKMWpsNB8UXF+oHLzxzm+zFOoq1MnUJLXWm5EtB+q0AH0MHAKrWcHRVUqwMNbQ3oeXxGNwH1ByGcnnH1a1YgAgf3hlAbFl1Xgec46/tC48fo65dTraqLkL7aau7NMMPran1W5DzGOMlwd3UGiQwDAzOlgejI0j4YCduan/yTIVgiJLKCShR1lgJ0r4txzET5JYR9Rw6ZP2fqrejWVQR3elwo1JUpKQgLKs6ivhY9AbmBgsaog1K4c6Suohg7ADcOulTcCxE8uWEbKcRNMKzEsCR9XSRIkyWXxwfqiIneIw15fjtFpDFdemFa4IkWkTMehI6xiGxAWyWpawGzQXqAgFYIixHSLfLFCq0OGnafeOmE7KcZzFMkLp0yF0O2yhQS+pJIU3gabwdth03H5DOxAgE6ZFosdrzPXcERHNX9NkI+X1CvaPiVMqFJABdQ/wDlLdR7PrjLs7m170qLgAov/c3PQlRfqSTi5n+IF0Zj7bE+LUfDYxABsdIfebMPLAriEhkU6SQFBIHPStvOCDf1xXXXi5JjbyOmPPZL9qDQB8bS9OeZQDWvvWT/ANPzxfr8H0sAzgmdhhW7MZqpTqCpTfS6XWQDHWA1ueHWh2iBvmKGk3h6cX6numM/BuW2LlJPuci4Ly69yxQqaVCjYWAwycG4YzrLgqOQmJ8/6nHHZ5Ms666NVKjAXBsV89BuD64G/wBo3GK9Kl3OXKLrWa1ZjdFjwhFi7nf3AbmRrvg6mUUEt90p9q+2VDJDu6MNVMi3TqxM6R8723tluYzdfM1GZmDfV1DzuQnSSIny9+POGZGrWqFo1zNydzuRrM3vdrk33JwWydAUo7wwstIjpNoHKTp9J9MSnTK7bFT7VgulwwrEqviXwrIJAt4jfw2mJn0wby2fekAU0wwFo0gACwEkTvynAjjObgsxAUclECPWOZPL8sL+b4q7kECABHU+8nHlGTyUvd2Z+gcrxyg3/MA/hf8AlwWymcpzKuhJ8wD8DB5D4YxbI8YYC5BBEGRv8MFcnxkqqrTdQByJYTf78WnuK4snxNczVUN7QKn7QuPlcHA7tPWdMnUhtesBAfIsJ+QIwmf/AFqNE1e6J6CQT0P1feRi1xTj/gWII8TG0SQIHODz2wm8gVmN8d2NgiSzTVJm0mPnH4Y0rsLlO9VWcW+8A2Hvwg5bKKzhtLd2TcDdPiLjpjaeBUKdOkEHt6Z09BG3qOeIq0JOTpOwENDMbcsc18wN+XPFPVIge7FHiWaK0qh6IfjEDFZGdxXOD+GklFtvt7/xxLxbsj3rB+9gxcFNQBjoTf05457M158bL7NljmfTy/HywzO4MNP54RQuDlCs4t9piJxDs9Xy9M905qKVhmXwkEgySq2CzzG3zwO4HxJkakiVQAhBfmpqBI5mQN784FjGNNpIbxcH4/1GM4/tS7SBdORprrqtepadKkQFkjc7mNgPPDy+SZqAPuByM/ayrkO5WrmoDR4QslyOgAuRPM288Zke15oM30NWpKf8Qhzt9keEf+WBNPOuhknvGYftGa5IAA06jyAEA/hGClGrQKgmnYfbadF2gDYi829+BBYjNirLgDudypU7YcSYafpTBTy7ukP/ANMcvxnNVCGrKKojfSFMbTqUdTcmcTJk178BCEDCbnTFzzbeenribP8AD1DQrBzMNA6m5ibx0wSgwPr77kmT7TaSquroFsCDOkHkRADL6ifuwy8POXz4CVCGdRC1AYMcgZuR67em2dVWUFgCY9N48jtY4io1SrBkJDAyCNx8MFDUzXsnkKWSR3vCiWLXgLfljG+0+cXvNCwxWdbrIDvyJWSJAF/MtjUOG9p0r5Sqa1qtJQHEe3JARgDaeo6jocZ3XyiVTDGnqbl3aqR6GmVPxnAkbHAqB36isazO8k6iTsT+P54r5uowaGkHz/P8sMfEOy1ehUAVC4N1YGAP83n5Yr0uzLF4ZivkPFfyJgT+r4nKHl2JSPIqC+5J2bru58ZOmmJDxJUnYTFpxcqV20ikVZqpJ06jAMtJIUQumIBnYicXeDZZNWilAClQCWkNYyzADeXPoaYwQ7RZRFmKYphSSdAj2gWmIuFYzbe4OxBPgcnOa0Fz1EXMVVFVAQAukE6YE+E3sDcixN5354kzVHWSx0gnUwgESBaAAAo5nnuByxzxpStZSpYOIsxllsSdTWJNjiegJAgWIv5k3EDl/TBIO8lDHFDCS8GzMOG8iMaR2XqU6xBMEgGJGw3n18MYR+A8CqNq74mmo2Le0QByB2254JcH4+tIulBSBO5gkxuZj3jb0xUq4O5zvIAZiV+IxZivUp5lmqhlp0kNUwdIIS4UQLlmAEztq3wh1uK5jN1mq1C7mo2rQLgAeEBU5C59Y5kYf+Idp3oZcF1VjVqMBIJGlV9rTNzqLaRYW8sLFDtDXYsF7tDAA0DSA5DNDESYAA5/PCXILZHVsRVglgZKpQSmSop3IT2WYTv4T0kXPU4AcUrKqkzKpETzJ8udxz6YOdoeJQsEkkDcmYHQdJxnuaqNVMkwpMDny6frfAtg6nvHpNjafUhzmbaoZY2/V/XEBfoMd1aOnfDJ2Y7GZjNoz00hVIEtaZE29PxwIGzr6iL+pRTOoN9TQTzIBB5xMg/liSjXDOFB8PWNJAFz6mAcUW4e46fHH3cMm6SPP8IOH9iI4ofRjb9P7tEKVJHOSBbkRN5/VsEq1NnohkWS0Agb7k/cse/CZkszUiAVYmVKtf2oG3MW+/DrQyxZqaiwEkxaBYCI22IxNe3QEyqviSYwdlv7rvGC6kj2rDeFBO0kwfdgivaoiopdbTBIIlTyvs36vi7mKFP6O9OowpmoBrMhfT4fnhOzPAWooGFQugMeGDK+p3b9607RthiIVWIsfk3Rmp5LjVNhJhgY8Q+4xsfI4o9o6neCnSp3aq3/AIreT749wOEHgGZgSh7ttoIhHtcEHb8/jht4RWV/2iHxkXTmo56f3ZuR54w/cMmrYQe4xZPLKihQDAEf19+L1GnOxwBp8WYHQZU9G5+nP4YufTGWNSMOhHiB94wWZ1CW1T3K/bPjpyGUespBqMRTorEzVadJjmBBYj93GV5bjrOCKoFQsTDyQ0eLxa5JBInY8zjj+2PtEa+bpZdT4aC35ftHgmR5IF9JbC5lQbKJIEA258z5jA73B8j+0ZNF7O5XLOSx8LnrtqAnVI3F9o57C2LJXu7SsRYGDEEmTqv922FReK93TkWJ8NzPO5BJnc+ljyGFytXqVXABYsx0os+0SQB7iThugSBayxjXxl6xaaQoxzOkAn1mQfjgcq5lYlTYzqIIBt1sPnjVeyPZ6nk6KLqL1QPE7AWJuQs7KDtzwVzVU7lgD1Ej5TjNla1BRMeqcTVVJS5YiTAt1EjfFd84pWSn8SwY942xqOb4Xl6s95TRmIudIBPqwvjMuO9mKtCuq0pZahimwNx1DERBHXn8saDPDPU6zNRkyTN3gl6iiCAWZdDgKD/HN8C+zuSNSpqMKqi5IuQN/OcXeKcR1fslfWijpTIlmHJ1hSPCLfVjaWx7k+JyhUClJkD9mAYDRJZYBJifdOB+e5lzYuCXs5xbX4YiQdJ5QIsDzN4IAsR6Ss8X47Yz4mMc4O+4I2Nt/PDUM9l1pKz5dhcBnolaZE2gkkaiQZsLE4EN2my2hgMoHyyAe2qoS2w9mQRPXecCx/cXSgJ3Opx2L4dWqL3ynUzEkkXKxIFudxtg5xGlVZVLapVPDJIYhSwh3B8J2MdBHnixl+1cU6VJMv3KsA7eKTDgmxSCGJYXN/IclfMceq0qwJqM5ZocNJ6yefjkRP540YBBdS1hz+ZKXE+CVw3eMhKqbKAGbbcgzawBMTzjHfD6bsg0UoIIuFYsLH6xkjbywJ4t2jrVWiSo1EkSSJ9DaB0wb4Nn6qrpDxKmY5ezfyufngl48upTcrrWNyUe7c1/EW/jMEb/AGr45ybQ49YxHlqmqtJ8ze/LFg0tT23LQPU/1OGjItvwfxDPa7MlTSp3Pd0VW1/Ew1En/WR78DuGcQCjTpEETMiA0BQCNza59cWO0WfHeVOYDECOgJAHnYDC2mYCpqHI2HP9fliVv75tdfJfUt5x9awCQNXiJMeEtYX+sRf0jrgRWzABhRABm33T5Yhr5pnJk7mYGPqIhdWmRMEna6mB62J9wxkvrp4juTZbKVK9VaaCXbZfcSfkJxudHgKUaNKkHRFUEwafeksY1MWM7npEAAcsZL2Op6e8qzsNK9JME7eQAnzxuPCqLZehTUMzahqNrAkA28r/ACwwdCR+ZZ3wHoTH6fcsIOsN1tAwQygpHwVIYfaG49V/L54dG7J5M/8AJ/8AN/5sRf8ACOTG1I/9yp/NhnMQv6Vj8wBney1Cmi1lWYIKurSpM7Ry64NcApDSWgGIF/UxPlMnBbL8BoaAmg6Z21vy2+t+8fjhk4dwiimXAVIBJm7X984nI5W6fUMVulRBOmY52p4vnqVVWq6UmQrKCUcE2DyCA0eV7zizwDO1TSZ6I1BRNSgWkLP1qYnxUzMwNrxjY6HB6BVkNMFdIMEk8vM4VeG9mMrRzk0qRSWMgO8GVv4dUfLDi0Fayy4QNmdUu0FJjvpINgQJnbSWHtDoTe0TfBXg3EHJFXwhlYlIaZHI+E2sdjvcYb+PdmMqaoburiWEMwhm3MBoviPIdlspS0slKCRJOtzJv1bC2/MI0nNEnOYGdRbKHQ+NRyPOD9ki494wSyucelU7lix5gN4hHkd59+KnC+EUUzCVFUhpInW9xE3BaDcDDLx3h9M1EYrcTzI+448D8GLah90HufmTiWaNfO1anOpXdv8AU5j5Wwx8NyRs0xqYADc3kg33H5Yb8r2NyQKxR2M/3lTcxP1vIYMf8NZaP7s2gD9o9hf97Gpm6Y3yanYjMmScdzJUKoEA78yYJ+d8WewWTbMZ1L3AZxJjYGL+pn3Y0DN9kMmzSaMkbftKn3asWuEdl8rSq66dLS2kiQ77GOWrHgfunhQRXnW4YUydFKIbvgnk2pn9N7Y+zOfUpqVkAHS/9MfUeDUTupN+buefQtjjMdn8uWvTP+t/5sESNkhos9DP5/qBG40A16hb0/piPjfFpytUr4GsqMSFMtZivohN+WoHDDluzWVlT3XP7T/zY97S9nMs4QNTsJIAdwJMEmA1z5+mC5CHX47c+5juVokvCg7yrGNRk7z1OmPecWK+YFOnIkWAiDJbSCDfn+AnGjU+y2UCiKWwEeNzt6tff54rVuyWUIk0jJJ/5tTy/f6W9MLJjf6ZnbTMkzfEKjKKKiQ9vfqFx5iInzwWzeTDLl8pTgBmALeQguxvYCSxw/5LsXkVYsKF4N+8qH72xJR7JZMa4pHxb/tKm17TqsDJkc8B2Bkf9DGGeh3/AJMVsuTVpNeFBLLPtFJGnfcQEN7eDCfmyyPUEwRqEzIgk3DczIEdb42g9nMt3YXu7W+u/IWvqnmcCq/Y/JtZqRI//JU5TH1/M/HGnOoqnx3DEnJi+WTU48zJ/HDOAFWQdxt7wP6/DGh5LsVkVaRQgxH95U/mxafsnk9U90dv8Sp58tVsEpyNvrZ26mUZRLscGOG04r0AftqT/qX8sPlLsjkxEUef+JU/mxdPZnK94D3VxEeN+W31sOVxkneh99iYXxfN6na31jef3if16Y+4rlHoOaVTUKi/3isF8LbiGVjqGkgzbfbGst2HyEn9h/7Kn8+Pj2GyH+B/7Kn8+JzL1QKAJjKA7gwRfodxt54loUZIBOkEiTBMCd4FzAJ2xsI7DZD/AAP/AGVP58S0uxORn+4P/cqfz4yadi52V4ODQoiGLOwLgRC0jOp2MyCIAAIAMeYGHHiXbIh9FMNTpoIpz7TKLSeW4O2Gns5wWhTpOEpwAgO5NwIG55DbpJ6nC9R7KZSW/Zbmfbf+bBWZnU5rUM2nfc//2Q==" alt="Poseidon">
+        </div>
+        <div class="back">
+            <p class="title">ПОСЕЙДОН</p>
+            <p>Бог моря, землетрусів і коней, брат Зевса.</p>
+        </div>
+    </div>
+</div>
 
+<div class="card-container">
+    <div class="card">
+        <div class="front">
+            <img src="https://veronese.ua/content/images/9/536x536l50nn0/statuetka-hades-boh-pidzemnoho-svitu-267-sm-23427457269353.jpg" alt="Hades">
+        </div>
+        <div class="back">
+            <p class="title">ГАДЕС</p>
+            <p>Володар підземного царства мертвих.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="card">
+        <div class="front">
+            <img src="data:image/jpeg;base64,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" alt="Athena">
+        </div>
+        <div class="back">
+            <p class="title">АФІНА</p>
+            <p>Богиня мудрості, справедливої війни та ремесел.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="card">
+        <div class="front">
+            <img src="https://static.wikia.nocookie.net/zlodei/images/5/5a/%D0%90%D1%80%D0%B5%D1%81_%D0%B8%D1%81%D0%BA%D0%BE%D0%BD%D0%BD%D0%BE%D0%B5_%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5.webp/revision/latest/scale-to-width/360?cb=20241121171601&path-prefix=ru" alt="Ares">
+        </div>
+        <div class="back">
+            <p class="title">АРЕС</p>
+            <p>Бог війни, уособлення жорстокої сили й агресії.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="card">
+        <div class="front">
+            <img src="data:image/jpeg;base64,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" alt="Aphrodite">
+        </div>
+        <div class="back">
+            <p class="title">АФРОДІТА</p>
+            <p>Богиня кохання і краси, народжена з морської піни.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="card">
+        <div class="front">
+            <img src="https://static.wikia.nocookie.net/mif/images/2/22/%D0%93%D0%B5%D1%80%D0%B0.jpg/revision/latest?cb=20150723183624&path-prefix=ru" alt="Hera">
+        </div>
+        <div class="back">
+            <p class="title">ГЕРА</p>
+            <p>Богиня шлюбу і сім’ї, дружина Зевса.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="card">
+        <div class="front">
+            <img src="data:image/jpeg;base64,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" alt="Artemis">
+        </div>
+        <div class="back">
+            <p class="title">АРТЕМІДА</p>
+            <p>Богиня полювання, дикої природи та місяця.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="card">
+        <div class="front">
+            <img src="https://static.wikia.nocookie.net/fantasticbeings/images/2/22/%D0%90%D0%BF%D0%BE%D0%BB%D0%BB%D0%BE%D0%BD.jpg/revision/latest?cb=20250413055454&path-prefix=ru" alt="Apollo">
+        </div>
+        <div class="back">
+            <p class="title">АПОЛЛОН</p>
+            <p>Бог музики, мистецтва, пророцтв і сонця.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="card">
+        <div class="front">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdvIXZa6zJ16q7w-J_xTPk0EZY_GO1hRR-Ow&s" alt="Heracles">
+        </div>
+        <div class="back">
+            <p class="title">ГЕРАКЛ</p>
+            <p>Найбільш сильний герой, відомий своїми 12 подвигами.</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
